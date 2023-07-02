@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'  # SQLite database file path
 app.config['SECRET_KEY'] = 'xyz123'
 db = SQLAlchemy(app)
-
+#Flask Assignment
 class Student(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
